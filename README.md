@@ -17,6 +17,20 @@ Path Planning → Obstacle Map → ESDF Distance Field → Gradient Calculation 
 3. **Gradient Calculation**: Use Sobel operator to compute gradient magnitude (step size) and gradient direction (steering)
 4. **RRT Planning**: Efficient path search based on the gradient field
 
+## Method Visualization
+
+### ESDF Distance Field Generation
+
+![Convert Obstacle Map to ESDF](doc/fig/convert_esdf.png)
+
+*Figure 1: Convert Obstacle Map to ESDFs Map for Collision Checking (Resolution: 0.1)*
+
+### Gradient Field Calculation
+
+![Gradient Map](doc/fig/gradient_map.png)
+
+*Figure 2: Calculate ESDFs Gradient Map for RRT Steering using Sobel Operator*
+
 ## Dependencies
 
 - Python 3.x
