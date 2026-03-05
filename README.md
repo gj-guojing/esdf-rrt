@@ -43,6 +43,27 @@ Path Planning → Obstacle Map → ESDF Distance Field → Gradient Calculation 
 | Shapely Polygon Based     | 212             | 0.147            | 6.91E-04                         |
 | ESDF Based                | 418             | 0.006            | 1.44E-05 (48x faster)            |
 
+### Path Planning Comparison
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="doc/fig/f7.png" width="400" alt="Shapely Based RRT">
+      <br>
+      <b>Figure 3: Shapely Based RRT</b>
+      <br>
+      <i>Polygon-based Collision Checking</i>
+    </td>
+    <td align="center">
+      <img src="doc/fig/f8.png" width="400" alt="ESDF Based RRT">
+      <br>
+      <b>Figure 4: ESDF Based RRT</b>
+      <br>
+      <i>48x Faster Collision Checking</i>
+    </td>
+  </tr>
+</table>
+
 ## Acknowledgments
 
 The RRT base implementation references the PythonRobotics project by [AtsushiSakai](https://github.com/AtsushiSakai).
